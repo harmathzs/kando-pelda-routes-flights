@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function NavbarMenu({ onLogout }) {
   return (
-    <Navbar bg="light" expand="lg" className="mb-4 shadow-sm">
+    <Navbar bg="light" expand="lg" fixed="top" className="mb-4 shadow-sm">
       <Container>
         <Navbar.Brand>TravelAir</Navbar.Brand>
         <Nav className="me-auto">
