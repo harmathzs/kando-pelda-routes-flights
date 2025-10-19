@@ -1,4 +1,7 @@
-/** TODO react-app> npm i express cors react-router-dom bootstrap react-bootstrap */
+/* TODO react-app> npm i express cors react-router-dom bootstrap react-bootstrap */
+
+/** TODO - dev team collaboration powered by Git */
+/** branch deployment promote chain: prod=main <- uat <- dev/flights <- dev/flights-firstname-lastname */
 
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
@@ -23,7 +26,7 @@ export default function App() {
       <Routes>
         <Route path="/" element=
           {loggedIn ? <Navigate to="/destinations" /> : <Login onLogin={() => setLoggedIn(true)} />} />
-          
+
         <Route path="/destinations" element={<Destinations />} />
         <Route path="/flight-info" element={<FlightInfo />} />
         <Route path="/tickets" element={<Tickets />} />
