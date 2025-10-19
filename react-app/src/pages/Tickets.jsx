@@ -13,6 +13,7 @@ export default function Tickets() {
   return (
     <div className="container">
       <h3>Book a Ticket</h3>
+      {/* TODO - apply TicketForm */}
       <Form onSubmit={handleSubmit}>
         <Form.Control placeholder="Name" onChange={e => setForm({ ...form, name: e.target.value })} className="mb-2" />
         <Form.Control placeholder="From" onChange={e => setForm({ ...form, from: e.target.value })} className="mb-2" />

@@ -4,6 +4,7 @@ export default class Login extends Component {
         return (
             <>
                 <p>TODO - implement Login component</p>
+                {/* TODO - apply LoginForm */}
             </>
         )
     }
